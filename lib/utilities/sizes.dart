@@ -85,5 +85,5 @@ double getAdaptiveTextSize(double value) {
 
 
   print( 'the screen height is ${ getScreenHeight()}');
-  return (value / 720) * getScreenWidth();
+  return (value / 720) * getScreenHeight();
 }

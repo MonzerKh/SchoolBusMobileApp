@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:schoolbus_app/utilities/colors.dart';
 import 'package:schoolbus_app/utilities/sizes.dart';
 
@@ -36,8 +37,8 @@ class InputField extends StatelessWidget {
 
   final int minLength;
   final bool activeValidation;
-  final IconButton? prefixIcon;
-  final IconButton? suffixIcon;
+  final FaIcon? prefixIcon;
+  final FaIcon? suffixIcon;
   final TextEditingController? controller;
   final Function(dynamic )? onChanged;
 
@@ -67,9 +68,14 @@ class InputField extends StatelessWidget {
           minHeight: prefixIcon!=null?24:0,
           minWidth: suffixIcon!=null?24:0,
         ),
-        prefixIcon: prefixIcon ?? Container(color:Colors.red,width: 0,height: 0,),
+        prefixIcon: Padding(
+          padding:  EdgeInsets.all(CustomSizes.padding5),
+          child: prefixIcon ?? Container(color:Colors.red,width: 0,height: 0,),
+        ),
         suffixIcon: suffixIcon ?? Container(color:Colors.green,width: 0,height: 0,),
         labelText: labelText,
+        isDense: true, // and add this line
+
         contentPadding: EdgeInsets.symmetric(
             vertical: verticalPadding ?? CustomSizes.padding1,
             horizontal: horizontalPadding ?? CustomSizes.padding1),
