@@ -23,6 +23,17 @@ class CustomSizes{
   static  double height7 = getAdaptiveTextSize(50);
   static  double height8 = getAdaptiveTextSize(25);
 
+  // Width
+
+  static  double Width1 = getAdaptiveTextSize(300);
+  static  double Width2 = getAdaptiveTextSize(250);
+  static  double Width3 = getAdaptiveTextSize(200);
+  static  double Width4 = getAdaptiveTextSize(150);
+  static  double Width5 = getAdaptiveTextSize(100);
+  static  double Width6 = getAdaptiveTextSize(75);
+  static  double Width7 = getAdaptiveTextSize(50);
+  static  double Width8 = getAdaptiveTextSize(25);
+
   //ICON SIZE
   static double iconSize    = getAdaptiveTextSize(20);
   static double iconSizeMedium    = getAdaptiveTextSize(30);

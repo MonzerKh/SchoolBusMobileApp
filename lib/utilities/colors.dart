@@ -12,7 +12,9 @@ class CustomColors{
   static const Color white2   = Color.fromRGBO(245,240,240, 1);
   static const Color yellow   = Color.fromRGBO(247 ,201, 15, 1.0);
   static const Color primary  = Color.fromRGBO(92 ,62 ,188, 1.0);
+  static const Color muted = Color.fromRGBO(136, 152, 170, 1.0);
   static const Color primary1 = Color.fromRGBO(30 ,0 ,105,1);
   static const Color primary2 = Color.fromRGBO(93 ,62 ,189,1);
   static const Color blackWithOpacity   = Color.fromRGBO(0 ,0 ,0, 0.5);
+  static const Color border = Color.fromRGBO(202, 209, 215, 1.0);
 }
